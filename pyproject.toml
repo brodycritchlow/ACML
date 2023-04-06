@@ -11,6 +11,8 @@ homepage = "https://github.com/brodycritchlow/ACML"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.28.2"
+pathlib = "^1.0.1"
 
 [build-system]
 requires = ["poetry-core"]
