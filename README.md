@@ -5,8 +5,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://i.imgur.com/VOyXacd.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://i.imgur.com/5z9hADM.png">
+    <img src="https://i.imgur.com/5z9hADM.png" alt="Logo" width="250" height="80">
   </a>
 
   <h3 align="center">ACML</h3>
