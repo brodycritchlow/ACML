@@ -14,7 +14,7 @@
   <p align="center">
     Advanced Config Markup Language
     <br />
-    <a href="https://github.com/brodycritchlow/ACML"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/brodycritchlow/ACML/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">PyPi</a>
@@ -104,7 +104,7 @@ config = parse("path/to/config.conf/")
 config["key"]["key2"]
 ```
 
-_For more examples, please refer to the [Documentation](https://github.com/brodycritchlow/ACML)_
+_For more examples, please refer to the [Documentation](https://github.com/brodycritchlow/ACML/wiki)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
