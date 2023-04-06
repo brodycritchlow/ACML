@@ -1,5 +1,33 @@
 import re
 import json
+import pkg_resources
+import requests
+
+__version__ = pkg_resources.get_distribution("ACML").version
+
+def check_version(package_name, current_version):
+    """
+    Check if a new version of the package is available on PyPI.
+    """
+    response = requests.get(f"https://pypi.org/pypi/{package_name}/json")
+    if response.status_code != 200:
+        return False
+
+    data = json.loads(response.content.decode("utf-8"))
+    latest_version = data.get("info", {}).get("version")
+    if latest_version is None:
+        return False
+
+    # Compare version numbers
+    current_version = re.sub(r"[^\d\.]", "", current_version)
+    latest_version = re.sub(r"[^\d\.]", "", latest_version)
+    return (current_version != latest_version, latest_version)
+
+check, lvr = check_version("ACML", __version__)
+
+if check:
+    print("NEW VERSION OF ACML AVAILABLE: ")
+    print(f"\t- {__version__} -> {lvr}")
 
 def parse(file_path):
     """
